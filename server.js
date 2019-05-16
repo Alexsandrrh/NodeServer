@@ -13,7 +13,7 @@ app.use(cors());
 
 // Init Routers
 app.use('/', require('./router/index'));
-app.use('/api', require('./router/api'));
+app.use('/api', require('./api/posts'));
 
 app.listen(port, () => {
   console.info(`NodeServer started...\nOn port http://localhost:${port}`);
